@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Dữ liệu người dùng / chạy app (KHÔNG đưa lên GitHub)
+users.json
+remember_me.json
+bot_memory.json
+settings.json
+chat_history.txt
+generated_images/
+
+# IDE / hệ điều hành
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

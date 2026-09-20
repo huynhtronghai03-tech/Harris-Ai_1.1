@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterWindow</class>
+ <widget class="QMainWindow" name="RegisterWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>720</width><height>720</height></rect></property>
+  <property name="windowTitle"><string>Harris - Register</string></property>
+  <property name="styleSheet"><string notr="true">
+QMainWindow { background-color: #0A0A0B; }
+QWidget#centralwidget { background-color: #0A0A0B; }
+QWidget#card { background-color: #151517; border: 1px solid #262629; border-radius: 24px; }
+QLabel#lblLogo { font-size: 48px; color: #FFFFFF; background: transparent; }
+QLabel#lblTitle { font-size: 30px; font-weight: 800; color: #FFFFFF; background: transparent; }
+QLabel#lblSubtitle { font-size: 14px; color: #8A8A8E; background: transparent; }
+QLineEdit { background-color: #1E1E20; color: #FFFFFF; border: 1px solid #2C2C2E; border-radius: 12px; padding: 16px 18px; font-size: 14px; }
+QLineEdit:focus { border: 1px solid #00D4FF; background-color: #232325; }
+QPushButton#btnRegister { background-color: #00D4FF; color: #000000; border-radius: 12px; padding: 16px; font-size: 15px; font-weight: 700; }
+QPushButton#btnRegister:hover { background-color: #00E0FF; }
+QPushButton#btnGoLogin { background-color: #1E1E20; color: #FFFFFF; border: 1px solid #2C2C2E; border-radius: 12px; padding: 14px; font-size: 13px; font-weight: 600; }
+QPushButton#btnGoLogin:hover { background-color: #262629; }
+QLabel#lblQuestion { color: #6A6A6E; font-size: 12px; background: transparent; }
+</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="vlRoot">
+    <property name="leftMargin"><number>24</number></property>
+    <property name="topMargin"><number>24</number></property>
+    <property name="rightMargin"><number>24</number></property>
+    <property name="bottomMargin"><number>24</number></property>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QWidget" name="card" native="true">
+      <property name="minimumSize"><size><width>420</width><height>600</height></size></property>
+      <property name="maximumSize"><size><width>420</width><height>680</height></size></property>
+      <layout class="QVBoxLayout" name="vlCard">
+       <property name="spacing"><number>16</number></property>
+       <property name="leftMargin"><number>32</number></property>
+       <property name="topMargin"><number>32</number></property>
+       <property name="rightMargin"><number>32</number></property>
+       <property name="bottomMargin"><number>32</number></property>
+       <item><widget class="QLabel" name="lblLogo"><property name="text"><string>✦</string></property></widget></item>
+       <item><widget class="QLabel" name="lblTitle"><property name="text"><string>Tao tai khoan</string></property></widget></item>
+       <item><widget class="QLabel" name="lblSubtitle"><property name="text"><string>Bat dau voi Harris AI ngay hom nay</string></property></widget></item>
+       <item><widget class="QLineEdit" name="txtEmail"><property name="placeholderText"><string>Email hoac so dien thoai</string></property></widget></item>
+       <item><widget class="QLineEdit" name="txtPassword"><property name="echoMode"><enum>QLineEdit::Password</enum></property><property name="placeholderText"><string>Mat khau (toi thieu 6 ky tu)</string></property></widget></item>
+       <item><widget class="QLineEdit" name="txtPasswordConfirm"><property name="echoMode"><enum>QLineEdit::Password</enum></property><property name="placeholderText"><string>Xac nhan mat khau</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnRegister"><property name="text"><string>Tao tai khoan</string></property></widget></item>
+       <item><widget class="QLabel" name="lblQuestion"><property name="text"><string>Da co tai khoan?</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnGoLogin"><property name="text"><string>Dang nhap</string></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/><connections/>
+</ui>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QMainWindow" name="LoginWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>720</width><height>680</height></rect></property>
+  <property name="windowTitle"><string>Harris - Login</string></property>
+  <property name="styleSheet"><string notr="true">
+QMainWindow { background-color: #0A0A0B; }
+QWidget#centralwidget { background-color: #0A0A0B; }
+QWidget#card { background-color: #151517; border: 1px solid #262629; border-radius: 24px; }
+QLabel#lblLogo { font-size: 48px; color: #FFFFFF; background: transparent; qproperty-alignment: AlignCenter; }
+QLabel#lblTitle { font-size: 32px; font-weight: 800; color: #FFFFFF; background: transparent; qproperty-alignment: AlignCenter; }
+QLabel#lblSubtitle { font-size: 14px; color: #8A8A8E; background: transparent; qproperty-alignment: AlignCenter; }
+QLineEdit { background-color: #1E1E20; color: #FFFFFF; border: 1px solid #2C2C2E; border-radius: 12px; padding: 16px 18px; font-size: 14px; }
+QLineEdit:focus { border: 1px solid #00D4FF; background-color: #232325; }
+QCheckBox { color: #8A8A8E; font-size: 13px; spacing: 8px; background: transparent; }
+QCheckBox::indicator { width: 18px; height: 18px; border: 1.5px solid #3A3A3E; border-radius: 5px; background: #1E1E20; }
+QCheckBox::indicator:checked { background: #00D4FF; border-color: #00D4FF; }
+QPushButton#btnLogin { background-color: #FFFFFF; color: #000000; border-radius: 12px; padding: 16px; font-size: 15px; font-weight: 700; }
+QPushButton#btnLogin:hover { background-color: #E8E8E8; }
+QPushButton#btnGoRegister { background-color: #1E1E20; color: #FFFFFF; border: 1px solid #2C2C2E; border-radius: 12px; padding: 14px; font-size: 13px; font-weight: 600; }
+QPushButton#btnGoRegister:hover { background-color: #262629; border-color: #3A3A3E; }
+QLabel#lblQuestion { color: #6A6A6E; font-size: 12px; background: transparent; qproperty-alignment: AlignCenter; }
+</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="vlRoot">
+    <property name="leftMargin"><number>24</number></property>
+    <property name="topMargin"><number>24</number></property>
+    <property name="rightMargin"><number>24</number></property>
+    <property name="bottomMargin"><number>24</number></property>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QWidget" name="card" native="true">
+      <property name="minimumSize"><size><width>420</width><height>560</height></size></property>
+      <property name="maximumSize"><size><width>420</width><height>600</height></size></property>
+      <layout class="QVBoxLayout" name="vlCard">
+       <property name="spacing"><number>18</number></property>
+       <property name="leftMargin"><number>32</number></property>
+       <property name="topMargin"><number>36</number></property>
+       <property name="rightMargin"><number>32</number></property>
+       <property name="bottomMargin"><number>32</number></property>
+       <item><widget class="QLabel" name="lblLogo"><property name="text"><string>◐</string></property></widget></item>
+       <item><widget class="QLabel" name="lblTitle"><property name="text"><string>Welcome back</string></property></widget></item>
+       <item><widget class="QLabel" name="lblSubtitle"><property name="text"><string>Dang nhap vao Harris AI</string></property></widget></item>
+       <item><widget class="QLineEdit" name="txtEmail"><property name="placeholderText"><string>Email hoac so dien thoai</string></property></widget></item>
+       <item><widget class="QLineEdit" name="txtPassword"><property name="echoMode"><enum>QLineEdit::Password</enum></property><property name="placeholderText"><string>Mat khau</string></property></widget></item>
+       <item><widget class="QCheckBox" name="ckSave"><property name="text"><string>Ghi nho dang nhap</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnLogin"><property name="text"><string>Dang nhap</string></property></widget></item>
+       <item><widget class="QLabel" name="lblQuestion"><property name="text"><string>Chua co tai khoan?</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnGoRegister"><property name="text"><string>Tao tai khoan moi</string></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/><connections/>
+</ui>
